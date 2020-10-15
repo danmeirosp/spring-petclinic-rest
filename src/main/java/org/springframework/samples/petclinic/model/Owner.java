@@ -98,6 +98,15 @@ public class Owner extends Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+    
+    public Boolean getValid() {
+        return this.valid;
+    }
+
+    public void setValid(Boolean valid) {
+        this.valid = valid;
+    }
+    
     @JsonIgnore
     protected Set<Pet> getPetsInternal() {
         if (this.pets == null) {
