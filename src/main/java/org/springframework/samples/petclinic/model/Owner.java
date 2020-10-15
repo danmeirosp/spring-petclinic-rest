@@ -67,6 +67,8 @@ public class Owner extends Person {
     @Digits(fraction = 0, integer = 10)
     private String telephone;
     
+    @Column(name = "valid")
+    @NotNull
     private boolean valid;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner", fetch = FetchType.EAGER)
